@@ -45,15 +45,16 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="delete";
     deleteButtonImg.src='./remove.svg';
-    deleteButton.appendChild(deleteButtonImg);
+    deleteButton.appendChild(deleteButtonImg).classList.add("delete");
 
 
     //and appending.
-    listItem.appendChild(checkBox);
+    listItem.appendChild(checkBox).classList.add("input");
     listItem.appendChild(label);
-    listItem.appendChild(editInput);
-    listItem.appendChild(editButton);
-    listItem.appendChild(deleteButton);
+    listItem.appendChild(editInput).classList.add("input");
+    listItem.appendChild(editButton).classList.add("btn");
+    listItem.appendChild(deleteButton).classList.add("btn");
+    listItem.classList.add("list-item");
     return listItem;
 }
 
