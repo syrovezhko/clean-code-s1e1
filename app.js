@@ -55,7 +55,7 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(editInput).classList.add("input");
     listItem.appendChild(editButton).classList.add("btn");
     listItem.appendChild(deleteButton).classList.add("btn");
-    listItem.classList.add("list-item");
+    listItem.classList.add("list__item");
     return listItem;
 }
 
