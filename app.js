@@ -50,7 +50,7 @@ var createNewTaskElement=function(taskString){
 
     //and appending.
     listItem.appendChild(checkBox).classList.add("input");
-    listItem.appendChild(label);
+    listItem.appendChild(label).classList.add("label");;
     listItem.appendChild(editInput).classList.add("input");
     listItem.appendChild(editButton).classList.add("btn");
     listItem.appendChild(deleteButton).classList.add("btn");
