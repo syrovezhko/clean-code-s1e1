@@ -87,7 +87,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("focus");
+    var containsClass=listItem.classList.contains("list__item_focus");
     //If class of the parent is .focus
     if(containsClass){
 
@@ -101,7 +101,7 @@ var editTask=function(){
     }
 
     //toggle .focus on the parent.
-    listItem.classList.toggle("focus");
+    listItem.classList.toggle("list__item_focus");
 };
 
 
